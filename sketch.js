@@ -6,15 +6,21 @@ function setup() {
 
 }
 
-function draw() 
+function draw()
 {
 
   // write the code to change background color 
   // to red when RIGHT_ARROW is pressed
+ 
   
-  
+  if (keyisDown(RIGHT_ARROW)) 
+  {
+    background("red");
 
-  if (keyIsDown(LEFT_ARROW)) 
+  }
+
+  
+if (keyIsDown(LEFT_ARROW)) 
   {
     background("blue");
     
@@ -32,7 +38,6 @@ function draw()
   }
 
 
-  
   drawSprites();
 }
 
